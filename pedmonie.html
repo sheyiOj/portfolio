@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PedMonie — Seyi Ojo</title>
+<meta name="description" content="PedMonie: a unified payment gateway PRD for Nigerian SMBs, written during a Product Manager internship at Intern Pulse." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
+    <nav class="nav" id="siteNav">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost header-cta" href="work.html">View Projects</a>
+      <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="motion-header" style="--glow-tint: rgba(88,185,138,0.14); min-height:420px;">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="container">
+      <a href="work.html" class="cs-back" style="opacity:1; animation:none;">← Back to case studies</a>
+      <p class="eyebrow">Case Study · FinTech PRD</p>
+      <h1>PedMonie</h1>
+      <p class="lead">A unified payment gateway consolidating mobile money, bank transfers, and card payments for Nigerian businesses — written during a Product Management internship, Intern Pulse Cohort 6.</p>
+
+      <div class="flow-stepper">
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Payment</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Verification</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Processing</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Confirmation</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="cs-meta-grid" style="margin-top:48px;">
+      <div class="cs-meta-item"><div class="k">Role</div><div class="v">Product Manager (Intern) — PRD, MVP structure, competitor analysis</div></div>
+      <div class="cs-meta-item"><div class="k">Program</div><div class="v">Intern Pulse, Cohort 6</div></div>
+      <div class="cs-meta-item"><div class="k">Timeline</div><div class="v">Jan – Apr 2025</div></div>
+      <div class="cs-meta-item"><div class="k">Status</div><div class="v">Cohort MVP — PRD and product structure, not independently verified as launched</div></div>
+      <div class="cs-meta-item"><div class="k">Stack (planned)</div><div class="v">React, Chakra UI · Node.js / Python / C++ · MySQL</div></div>
+      <div class="cs-meta-item"><div class="k">Payments</div><div class="v">Paystack, Flutterwave, PayPal</div></div>
+    </div>
+
+    <div class="cs-content" style="padding-top:48px; max-width:760px;">
+      <div class="cs-section">
+        <h2>The problem</h2>
+        <p>"Users struggle to find convenient, versatile payment platforms, especially in Nigeria." PedMonie set out to solve the problem of managing multiple payment methods for businesses, and eliminating payment friction for their customers — consolidating mobile money, bank transfers, and card payments into a single system.</p>
+
+        <h3>Target user</h3>
+        <p><strong>Sarah, the Small Business Owner</strong> — 32, Lagos, an e-commerce store owner with moderate tech savvy. She needs to simplify checkout, offer multiple payment options, keep fees low, and trust that the system is secure. Her fear: losing customers to a complicated checkout, or a security breach that costs her their trust.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>My contribution</h2>
+        <ul>
+          <li>Wrote the PRD and defined the MVP structure for the platform.</li>
+          <li>Planned Paystack and Flutterwave integration for PCI-DSS-compliant transaction handling.</li>
+          <li>Defined authentication flows, including OTP.</li>
+          <li>Wrote user stories for transaction monitoring, fraud alerts, and security workflows.</li>
+          <li>Ran competitor analysis across Nigerian fintech products to guide feature prioritization.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section">
+        <h2>Key features scoped</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Feature</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Unified payment gateway</td><td>Combines mobile money, bank transfers and card payments via Paystack, Flutterwave and PayPal</td></tr>
+            <tr><td>Single checkout</td><td>One interface, auto-detecting available payment options by location</td></tr>
+            <tr><td>API &amp; plugin support</td><td>Developer API plus plugins for Shopify, WooCommerce, Magento</td></tr>
+            <tr><td>Multi-currency support</td><td>Accepts multiple currencies with automatic conversion for international sales</td></tr>
+            <tr><td>Smart payment routing</td><td>Routes to the best-performing gateway per region; retries via an alternate gateway on failure</td></tr>
+            <tr><td>Transaction monitoring</td><td>Real-time dashboard for transactions, refunds and chargebacks</td></tr>
+            <tr><td>Security &amp; compliance</td><td>PCI-DSS compliance, fraud detection, two-factor authentication</td></tr>
+            <tr><td>Recurring &amp; subscription payments</td><td>Automated billing and saved payment methods</td></tr>
+            <tr><td>Payouts &amp; bulk transfers</td><td>Automated settlements to vendors or employees</td></tr>
+            <tr><td>Customizable payment links</td><td>Shareable instant payment links via SMS, WhatsApp or email — no site required</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="cs-section">
+        <h2>Success metrics defined</h2>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Metric</th><th>Target</th></tr></thead>
+          <tbody>
+            <tr><td>Merchant growth</td><td>200+ merchants onboarded per quarter</td></tr>
+            <tr><td>Transaction success rate</td><td>90%+</td></tr>
+            <tr><td>Customer satisfaction (CSAT)</td><td>90%+</td></tr>
+            <tr><td>Dispute resolution time</td><td>90% resolved within 48 hours</td></tr>
+            <tr><td>Net Promoter Score</td><td>+70 or above</td></tr>
+            <tr><td>Uptime</td><td>99.9%</td></tr>
+            <tr><td>Fraud detection accuracy</td><td>95%+</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="cs-footer-cta">
+        <h3>See the live product</h3>
+        <p style="max-width:480px; margin:0 auto 20px;">PedMonie was a cohort MVP built as part of the Intern Pulse Product Management program.</p>
+        <div class="cs-hero-actions">
+          <a class="btn btn-primary" href="https://www.pedmonie.com.ng/" target="_blank" rel="noopener">Visit PedMonie ↗</a>
+          <a class="btn btn-ghost" href="work.html">← Back to case studies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer" style="margin-top:64px;">
+  <div class="container footer-inner">
+    <span>© 2026 Seyi Ojo</span>
+    <div class="footer-links">
+      <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

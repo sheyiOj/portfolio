@@ -155,6 +155,27 @@ if (contactForm) {
   });
 }
 
+// Experience page: draw the timeline progressively as items enter view
+const timeline = document.querySelector(".timeline");
+if (timeline) {
+  const items = Array.from(timeline.querySelectorAll(".tl-item"));
+  timeline.classList.add("drawn");
+  const tlObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          const idx = items.indexOf(entry.target);
+          const pct = ((idx + 1) / items.length) * 100;
+          timeline.style.setProperty("--draw-height", pct + "%");
+        }
+      });
+    },
+    { rootMargin: "0px 0px -15% 0px", threshold: 0.3 }
+  );
+  items.forEach((item) => tlObserver.observe(item));
+}
+
 // Case study page: scroll-spy for the sticky table of contents
 const tocLinks = document.querySelectorAll(".cs-toc a");
 const sections = document.querySelectorAll(".cs-section[id]");

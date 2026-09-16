@@ -17,13 +17,13 @@
   <div class="container header-inner">
     <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
     <nav class="nav" id="siteNav">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#approach">Approach</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
-      <a class="btn btn-ghost header-cta" href="#work">View Projects</a>
+      <a class="btn btn-ghost header-cta" href="work.html">View Projects</a>
       <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
       <a class="btn btn-primary" href="contact.html">Contact</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
@@ -48,7 +48,7 @@
           for Nigerian career switchers, taken from a fielded survey to a deployed, working product.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#work">View case studies</a>
+          <a class="btn btn-primary" href="work.html">View case studies</a>
           <a class="btn btn-resume" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Download resume <span class="arrow">→</span></a>
         </div>
 
@@ -90,10 +90,7 @@
           <span class="float-label l5">Build</span>
         </div>
         <div class="portrait-frame" id="portraitFrame">
-          <div class="portrait-placeholder">
-            SO
-            <small>Portrait pending</small>
-          </div>
+          <img src="assets/portrait.jpg" alt="Seyi Ojo" width="1024" height="1280" />
         </div>
       </div>
     </div>
@@ -121,6 +118,7 @@
         bookings and a real money ledger for payouts. I've also worked on AI-powered product initiatives
         in fintech, including an AI Copilot built for Moniepoint.
       </p>
+      <a class="btn btn-ghost" href="about.html">More about me →</a>
     </div>
   </section>
 
@@ -130,7 +128,7 @@
       <div class="section-head">
         <p class="eyebrow">Selected work</p>
         <h2>Case studies</h2>
-        <p>Two products, two different problems: a solo-built two-sided marketplace, and an AI copilot for a leading African fintech.</p>
+        <p>Four products, four different problems — a solo-built marketplace, an AI copilot, a fintech PRD, and an AI ad-generation tool.</p>
       </div>
 
       <div class="card-grid">
@@ -140,19 +138,16 @@
           <div class="tags">
             <span class="tag">0→1 Marketplace</span>
             <span class="tag alt">Solo PM + Builder</span>
-            <span class="tag alt">Nigeria</span>
           </div>
           <h3>CareerLink-Up</h3>
           <div class="card-status">Pre-launch · deployed on test payment keys</div>
           <p class="desc">
-            A paid 1:1 mentorship marketplace matching Nigerian career switchers to mentors — local and
-            diaspora — who made the same switch. I ran the survey, wrote the PRD, set pricing and the
-            15% commission model, and directed the build across Next.js, Supabase and Paystack, including
-            a database-enforced booking system and a real payout ledger.
+            A paid 1:1 mentorship marketplace matching Nigerian career switchers to mentors who made the
+            same switch. Ran the survey, wrote the PRD, set pricing, and directed the build.
           </p>
           <div class="card-links">
             <a class="primary" href="careerlinkup.html">Read case study →</a>
-            <a class="secondary" href="https://careerlinkup.vercel.app/" target="_blank" rel="noopener">View live product ↗</a>
+            <a class="secondary" href="https://careerlinkup.vercel.app/" target="_blank" rel="noopener">Live product ↗</a>
           </div>
         </article>
 
@@ -163,16 +158,53 @@
             <span class="tag alt">AI Copilot</span>
           </div>
           <h3>AI Copilot for Moniepoint</h3>
-          <div class="card-status">Case study hosted on Notion</div>
+          <div class="card-status">Product design case study</div>
           <p class="desc">
-            An AI-powered copilot initiative for Moniepoint, one of Africa's leading fintech platforms.
-            Full context, scope and decisions are documented in the linked case study.
+            An AI-powered financial insight feature for Moniepoint Business — profit/loss visibility,
+            spend categorization, and anomaly alerts, scoped from a 17-respondent survey.
           </p>
           <div class="card-links">
-            <a class="primary" href="https://app.notion.com/p/CASE-STUDY-AI-Copilot-for-Moniepoint-3dd3f299a1c28026b4dfe7620ebbfdb5?source=copy_link" target="_blank" rel="noopener">Read case study ↗</a>
+            <a class="primary" href="moniepoint.html">Read case study →</a>
           </div>
         </article>
 
+        <!-- PedMonie -->
+        <article class="project-card">
+          <div class="tags">
+            <span class="tag">FinTech</span>
+            <span class="tag alt">PM Internship</span>
+          </div>
+          <h3>PedMonie</h3>
+          <div class="card-status">Cohort MVP · PRD &amp; product structure</div>
+          <p class="desc">
+            A unified payment gateway PRD for Nigerian SMBs — wrote the MVP structure, planned Paystack
+            and Flutterwave integration, and defined fraud and auth flows.
+          </p>
+          <div class="card-links">
+            <a class="primary" href="pedmonie.html">Read case study →</a>
+          </div>
+        </article>
+
+        <!-- GenZ.ad -->
+        <article class="project-card">
+          <div class="tags">
+            <span class="tag">AI Product</span>
+            <span class="tag alt">PM (Part-Time)</span>
+          </div>
+          <h3>GenZ.ad</h3>
+          <div class="card-status">One-click AI ad generation</div>
+          <p class="desc">
+            Led development of a one-click AI ad-creation tool — cut manual design effort ~90%, shipped
+            a prototype in 4 weeks, onboarded 10+ beta users.
+          </p>
+          <div class="card-links">
+            <a class="primary" href="genzad.html">Read case study →</a>
+          </div>
+        </article>
+
+      </div>
+      <div style="margin-top:28px;">
+        <a class="btn btn-ghost" href="work.html">View all work →</a>
       </div>
     </div>
   </section>

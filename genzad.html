@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GenZ.ad — Seyi Ojo</title>
+<meta name="description" content="GenZ.ad: a one-click AI ad-generation platform. Product management during the HNG internship program." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
+    <nav class="nav" id="siteNav">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost header-cta" href="work.html">View Projects</a>
+      <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="motion-header" style="--glow-tint: rgba(190,111,255,0.14); min-height:420px;">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="container">
+      <a href="work.html" class="cs-back" style="opacity:1; animation:none;">← Back to case studies</a>
+      <p class="eyebrow">Case Study · AI Product</p>
+      <h1>GenZ.ad</h1>
+      <p class="lead">A one-click AI ad-creation platform that generates high-quality ad creatives from a single prompt — built during the HNG internship program.</p>
+
+      <div class="flow-stepper">
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Prompt</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Generate</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Edit</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Share</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="cs-meta-grid" style="margin-top:48px;">
+      <div class="cs-meta-item"><div class="k">Role</div><div class="v">Product Manager (Part-Time) — PRDs, sprints, bug triage</div></div>
+      <div class="cs-meta-item"><div class="k">Program</div><div class="v">HNG Internship</div></div>
+      <div class="cs-meta-item"><div class="k">Timeline</div><div class="v">Jan – Mar 2025</div></div>
+      <div class="cs-meta-item"><div class="k">Team</div><div class="v">3 engineers, 1 designer, coordinated remotely</div></div>
+      <div class="cs-meta-item"><div class="k">Result</div><div class="v">Prototype shipped in 4 weeks, 10+ beta users in 2 weeks</div></div>
+      <div class="cs-meta-item"><div class="k">Tools</div><div class="v">Linear (sprints), Figma (UX review)</div></div>
+    </div>
+
+    <div class="cs-content" style="padding-top:48px; max-width:760px;">
+      <div class="cs-section">
+        <h2>What it does</h2>
+        <p>GenZ.ad is an AI-powered ad creation platform that lets users generate high-quality ad creatives with a single click — simplifying and speeding up ad creation for businesses and marketers who'd otherwise rely on manual design tools.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>My contribution</h2>
+        <ul>
+          <li>Led development of the one-click AI ad generation tool, cutting manual design effort by approximately 90%.</li>
+          <li>Wrote PRDs, user flows, and acceptance criteria; coordinated 3 engineers and 1 designer.</li>
+          <li>Shipped a working prototype in 4 weeks and onboarded 10+ beta users within 2 weeks.</li>
+          <li>Ran sprints in Linear and reviewed onboarding and core UX screens in Figma.</li>
+          <li>Triaged and prioritized post-launch bugs across the FAQ, external forms, AI creative page, standalone share page, and community filter.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section">
+        <h2>Product analysis: weaknesses and proposed fixes</h2>
+        <p>Beyond the initial build, I ran a product analysis identifying technical, execution, and business weaknesses — and proposed fixes prioritized by team and timeline.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Weakness</th><th>Proposed fix</th><th>Priority</th><th>Timeline</th></tr></thead>
+          <tbody>
+            <tr><td>Large file sizes slow rendering and performance</td><td>AI-driven image compression, backend</td><td>Medium</td><td>3 days</td></tr>
+            <tr><td>AI text suggestions lack contextual relevance to images</td><td>Integrate Gemini AI for contextual ad copy</td><td>Medium</td><td>3 days</td></tr>
+            <tr><td>Inefficient session handling risks token hijacking</td><td>Automate auth token refresh, backend</td><td>High</td><td>1 day</td></tr>
+            <tr><td>Feature gaps vs. competitors weaken retention</td><td>Develop unique, competitive features</td><td>High</td><td>3 days</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="cs-section">
+        <h2>Bug triage snapshot</h2>
+        <p>Five bugs assigned across the FAQ, external-pages form, AI creative page, standalone share page, and community filter — three resolved, two in progress at time of writing.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Bug</th><th>Key challenge</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>FAQ listed features not yet offered</td><td>Content described unshipped functionality</td><td>Completed</td></tr>
+            <tr><td>Landing page video showed "not available"</td><td>Original video pulled by YouTube over copyright</td><td>Completed</td></tr>
+            <tr><td>Validation error after form submission</td><td>Error fired even when the user hadn't clicked sign-in</td><td>Completed</td></tr>
+            <tr><td>Shared link missing ad text</td><td>Ad text not rendered on the generated image</td><td>In progress</td></tr>
+            <tr><td>No sort/filter endpoint on community page</td><td>Users couldn't filter by audience or ad size</td><td>In progress</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+
+      <div class="cs-section">
+        <h2>Versioning roadmap</h2>
+        <p>I mapped the product's growth as a version sequence, from an unauthenticated quick-start to a full creative and distribution suite:</p>
+        <ul>
+          <li><strong>v0.01</strong> — Predefined prompts, no login required, for instant first-touch ad generation.</li>
+          <li><strong>v0.02</strong> — Authenticated image ad generation from campaign, audience, and ad-size inputs.</li>
+          <li><strong>v0.03–0.04</strong> — Editable ad text and image export (PNG/JPEG download).</li>
+          <li><strong>v0.05</strong> — Shareable standalone pages, viewable without login.</li>
+          <li><strong>v0.06</strong> — Community ad showcase, browsable and filterable by audience and size.</li>
+          <li><strong>v0.07</strong> — Direct social sharing to Facebook, Instagram, and X.</li>
+          <li><strong>v0.08–0.09</strong> — AI inpainting edits and early video ad generation.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section">
+        <h2>Exploring outcome-based pricing</h2>
+        <p>I also scoped an outcome-based pricing model — charging by ad engagement or time saved versus manual tools like Canva — contingent on integrating ad-platform analytics (Meta, Google, Instagram) to reliably measure performance before pricing on it.</p>
+      </div>
+
+      <div class="cs-footer-cta">
+        <h3>Next case study</h3>
+        <div class="cs-hero-actions">
+          <a class="btn btn-primary" href="work.html">← Back to case studies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer" style="margin-top:64px;">
+  <div class="container footer-inner">
+    <span>© 2026 Seyi Ojo</span>
+    <div class="footer-links">
+      <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Copilot for Moniepoint — Seyi Ojo</title>
+<meta name="description" content="AI Copilot for Moniepoint: an AI-powered financial insight feature for Moniepoint Business, scoped from a 17-respondent survey." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
+    <nav class="nav" id="siteNav">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost header-cta" href="work.html">View Projects</a>
+      <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="motion-header" style="--glow-tint: rgba(111,139,255,0.14); min-height:420px;">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="container">
+      <a href="work.html" class="cs-back" style="opacity:1; animation:none;">← Back to case studies</a>
+      <p class="eyebrow">Case Study · AI Copilot</p>
+      <h1>AI Copilot for Moniepoint</h1>
+      <p class="lead">Turning raw transaction data into profit/loss visibility, spend categorization, and anomaly alerts for Nigerian small business owners — recommendation-only, by design.</p>
+
+      <div class="flow-stepper">
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Transactions</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Analysis</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Insight</span></div>
+        <div class="flow-line"></div>
+        <div class="flow-node"><div class="dot"></div><span class="flabel">Action</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="cs-meta-grid" style="margin-top:48px;">
+      <div class="cs-meta-item"><div class="k">Role</div><div class="v">Product design — research, scoping, MVP architecture</div></div>
+      <div class="cs-meta-item"><div class="k">For</div><div class="v">Moniepoint Business — Nigerian fintech</div></div>
+      <div class="cs-meta-item"><div class="k">Timeline</div><div class="v">2026</div></div>
+      <div class="cs-meta-item"><div class="k">Research</div><div class="v">17-respondent survey on problem and feature demand</div></div>
+      <div class="cs-meta-item"><div class="k">Scope</div><div class="v">Recommendation-only — no autonomous transactions in MVP</div></div>
+      <div class="cs-meta-item"><div class="k">Stack</div><div class="v">React/Next.js, Node.js, PostgreSQL, OpenAI API</div></div>
+    </div>
+
+    <div class="cs-content" style="padding-top:48px; max-width:760px;">
+      <div class="cs-section">
+        <h2>What the survey found</h2>
+        <p>Before scoping the feature, I ran a 17-respondent survey to test both the problem and demand for specific capabilities.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Finding</th><th>Signal</th></tr></thead>
+          <tbody>
+            <tr><td>Profit/loss visibility is the strongest want</td><td>13 of 17 respondents</td></tr>
+            <tr><td>Daily/weekly summaries are the second strongest want</td><td>11 of 17 respondents</td></tr>
+            <tr><td>Users want to review AI actions before they happen</td><td>11 of 17 respondents</td></tr>
+          </tbody>
+        </table></div>
+        <div class="callout"><p>That last number set the entire scope: if most users want to check the AI's work before anything happens, the MVP cannot take autonomous action. It can only recommend.</p></div>
+      </div>
+
+      <div class="cs-section">
+        <h2>What I built</h2>
+        <p>A three-stage MVP that turns a business owner's raw transaction history into plain-language financial insight, without ever executing a transaction itself:</p>
+        <ul>
+          <li><strong>Profit/loss visibility</strong> — automatic categorization of income and spend into a readable summary.</li>
+          <li><strong>Spend categorization</strong> — transactions grouped and labeled so patterns are visible without manual bookkeeping.</li>
+          <li><strong>Anomaly alerts</strong> — flags on transactions that break a business's normal pattern, surfaced for the owner to review.</li>
+        </ul>
+        <p>The architecture separates verified transaction data from AI-generated interpretation: the database holds the ground truth, and the AI layer explains and summarizes it rather than calculating or altering it. That separation is what makes the recommendation-only constraint enforceable rather than just a design intention.</p>
+      </div>
+
+      <div class="cs-section">
+        <h2>Tools</h2>
+        <p>Google Stitch and ChatGPT supported the design and content-drafting process; the OpenAI API powers the insight-generation layer against PostgreSQL-held transaction data on a React/Next.js and Node.js stack.</p>
+      </div>
+
+      <div class="cs-footer-cta">
+        <h3>Full case study</h3>
+        <p style="max-width:480px; margin:0 auto 20px;">The complete write-up — including the full survey breakdown, MVP staging, and design decisions — is documented on Notion.</p>
+        <div class="cs-hero-actions">
+          <a class="btn btn-primary" href="https://app.notion.com/p/CASE-STUDY-AI-Copilot-for-Moniepoint-3dd3f299a1c28026b4dfe7620ebbfdb5?source=copy_link" target="_blank" rel="noopener">Read full case study ↗</a>
+          <a class="btn btn-ghost" href="work.html">← Back to case studies</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer" style="margin-top:64px;">
+  <div class="container footer-inner">
+    <span>© 2026 Seyi Ojo</span>
+    <div class="footer-links">
+      <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
