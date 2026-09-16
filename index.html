@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seyi Ojo — Product Manager</title>
+<meta name="description" content="Seyi Ojo is a Product Manager who runs research, PRDs, scope and build end to end — including directing AI coding agents to ship product solo. Case studies: CareerLink-Up and AI Copilot for Moniepoint." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
+    <nav class="nav" id="siteNav">
+      <a href="#about">About</a>
+      <a href="#work">Case Studies</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a class="btn btn-primary" href="#contact">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Product Manager · Lagos, Nigeria</p>
+      <h1>I turn ambiguous problems into shipped products people pay for.</h1>
+      <p class="lead">
+        I run the full product cycle — user research, PRDs, scope decisions, pricing, design direction —
+        and when there's no engineering team, I direct an AI coding agent against decisions I've made and
+        reviewed to build the product myself. Most recently: CareerLink-Up, a paid 1:1 mentorship marketplace
+        for Nigerian career switchers, taken from a fielded survey to a deployed, working product.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#work">View case studies</a>
+        <a class="btn btn-ghost" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Download resume</a>
+      </div>
+
+      <div class="hero-meta">
+        <div>
+          <div class="stat-num">0→1</div>
+          <div class="stat-label">Products taken from research to deployment</div>
+        </div>
+        <div>
+          <div class="stat-num">1</div>
+          <div class="stat-label">Person team on CareerLink-Up — research, PRD, pricing, design, build</div>
+        </div>
+        <div>
+          <div class="stat-num">24</div>
+          <div class="stat-label">Screens shipped, 18 DB migrations, 63 commits</div>
+        </div>
+        <div>
+          <div class="stat-num">FinTech</div>
+          <div class="stat-label">Also shipped: AI Copilot for Moniepoint</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>Product manager, first-principles operator.</h2>
+      </div>
+      <p style="max-width:720px; font-size:16px;">
+        I'm Seyi Ojo, a Product Manager focused on building things people will actually pay for —
+        not just things they say they want. My process starts with primary research, not assumptions:
+        on CareerLink-Up, that meant fielding a 14-question survey before writing a line of the PRD,
+        then cutting the most-requested feature (communities) in favor of the one respondents' behavior
+        actually pointed to (paid 1:1 mentorship), because a cold-start community can't survive a
+        pre-launch, single-founder product.
+      </p>
+      <p style="max-width:720px; font-size:16px;">
+        I work end-to-end: research and market sizing, PRDs and scope cuts, pricing and unit economics,
+        architecture decisions, and — as the sole builder on CareerLink-Up — directing an AI coding agent
+        to implement decisions I made and reviewed, including database-level correctness guarantees for
+        bookings and a real money ledger for payouts. I've also worked on AI-powered product initiatives
+        in fintech, including an AI Copilot built for Moniepoint.
+      </p>
+    </div>
+  </section>
+
+  <!-- Work / Case studies -->
+  <section id="work" style="background:var(--bg-subtle);">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Case studies</h2>
+        <p>Two products, two different problems: a solo-built two-sided marketplace, and an AI copilot for a leading African fintech.</p>
+      </div>
+
+      <div class="card-grid">
+
+        <!-- CareerLink-Up -->
+        <article class="project-card">
+          <div class="tags">
+            <span class="tag">0→1 Marketplace</span>
+            <span class="tag alt">Solo PM + Builder</span>
+            <span class="tag alt">Nigeria</span>
+          </div>
+          <h3>CareerLink-Up</h3>
+          <div class="card-status">Pre-launch · deployed on test payment keys</div>
+          <p class="desc">
+            A paid 1:1 mentorship marketplace matching Nigerian career switchers to mentors — local and
+            diaspora — who made the same switch. I ran the survey, wrote the PRD, set pricing and the
+            15% commission model, and directed the build across Next.js, Supabase and Paystack, including
+            a database-enforced booking system and a real payout ledger.
+          </p>
+          <div class="card-links">
+            <a class="primary" href="careerlinkup.html">Read case study →</a>
+            <a class="secondary" href="https://careerlinkup.vercel.app/" target="_blank" rel="noopener">View live product ↗</a>
+          </div>
+        </article>
+
+        <!-- AI Copilot for Moniepoint -->
+        <article class="project-card">
+          <div class="tags">
+            <span class="tag">FinTech</span>
+            <span class="tag alt">AI Copilot</span>
+          </div>
+          <h3>AI Copilot for Moniepoint</h3>
+          <div class="card-status">Case study hosted on Notion</div>
+          <p class="desc">
+            An AI-powered copilot initiative for Moniepoint, one of Africa's leading fintech platforms.
+            Full context, scope and decisions are documented in the linked case study.
+          </p>
+          <div class="card-links">
+            <a class="primary" href="https://app.notion.com/p/CASE-STUDY-AI-Copilot-for-Moniepoint-3dd3f299a1c28026b4dfe7620ebbfdb5?source=copy_link" target="_blank" rel="noopener">Read case study ↗</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section id="approach">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How I work</p>
+        <h2>Research-first, scope-honest, metrics-instrumented.</h2>
+        <p>The same process across every product I've shipped — demonstrated in full in the CareerLink-Up case study.</p>
+      </div>
+      <div class="approach-grid">
+        <div class="approach-item">
+          <div class="num">01</div>
+          <h3>Research before opinions</h3>
+          <p>Primary research fielded before the PRD — small samples reported honestly, as directional counts rather than dressed-up percentages.</p>
+        </div>
+        <div class="approach-item">
+          <div class="num">02</div>
+          <h3>Scope ruthlessly</h3>
+          <p>Cut the most-wanted feature when the data showed it couldn't work at this stage, and said so in writing rather than shipping everything.</p>
+        </div>
+        <div class="approach-item">
+          <div class="num">03</div>
+          <h3>Build with rigor</h3>
+          <p>Correctness pushed into the database, not the app layer — money handled as an auditable ledger, not a column.</p>
+        </div>
+        <div class="approach-item">
+          <div class="num">04</div>
+          <h3>Instrument and report zero</h3>
+          <p>Define the metrics and targets before launch, and report the real number — including when that number is zero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" style="background:var(--bg-subtle);">
+    <div class="container">
+      <div class="contact-box">
+        <div>
+          <p class="eyebrow" style="margin-bottom:10px;">Get in touch</p>
+          <h2 style="margin-bottom:8px;">Let's talk product.</h2>
+          <p style="margin-bottom:0; max-width:420px;">Open to Product Manager roles and collaborations. Reach out on LinkedIn or by phone.</p>
+          <div class="contact-item">📞 09035064851</div>
+        </div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <a class="btn btn-ghost" href="tel:+2349035064851">Call me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 Seyi Ojo</span>
+    <div class="footer-links">
+      <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
