@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Seyi Ojo</title>
+<meta name="description" content="Get in touch with Seyi Ojo, Product Manager — email, LinkedIn, or send a message directly." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
+    <nav class="nav" id="siteNav">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-ghost header-cta" href="index.html#work">View Projects</a>
+      <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="contact.html">Contact</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Contact hero — "Let's build something" -->
+  <section class="contact-hero">
+    <canvas id="networkCanvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <p class="eyebrow">Contact</p>
+      <h1>Let's build something meaningful.</h1>
+      <p class="lead">Have a product idea, collaboration opportunity, or a problem worth solving? I'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact options -->
+        <div>
+          <a class="contact-option" href="mailto:ojoseyi18@gmail.com">
+            <div>
+              <div class="co-label">Email</div>
+              <div class="co-value">ojoseyi18@gmail.com</div>
+            </div>
+            <span class="co-arrow">↗</span>
+          </a>
+          <a class="contact-option" href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">
+            <div>
+              <div class="co-label">LinkedIn</div>
+              <div class="co-value">View LinkedIn profile</div>
+            </div>
+            <span class="co-arrow">↗</span>
+          </a>
+          <a class="contact-option" href="tel:+2349035064851">
+            <div>
+              <div class="co-label">Phone</div>
+              <div class="co-value">09035064851</div>
+            </div>
+            <span class="co-arrow">↗</span>
+          </a>
+        </div>
+
+        <!-- Contact form -->
+        <div>
+          <form class="contact-form" id="contactForm">
+            <div class="field">
+              <input type="text" id="cf-name" name="name" placeholder=" " required />
+              <label for="cf-name">Name</label>
+            </div>
+            <div class="field">
+              <input type="email" id="cf-email" name="email" placeholder=" " required />
+              <label for="cf-email">Email</label>
+            </div>
+            <div class="field">
+              <input type="text" id="cf-topic" name="topic" placeholder=" " />
+              <label for="cf-topic">What would you like to discuss?</label>
+            </div>
+            <div class="field">
+              <textarea id="cf-message" name="message" placeholder=" " required></textarea>
+              <label for="cf-message">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message <span class="arrow">→</span></button>
+            <p class="form-note">Opens your email client with this message pre-filled, addressed to ojoseyi18@gmail.com.</p>
+
+            <div class="form-success" id="formSuccess">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="11" stroke="var(--success)" stroke-width="1.5"/>
+                <path class="check-path" d="M7 12.5l3 3 7-7" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Message sent. Thanks for reaching out.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="resume-teaser">
+        <p>Prefer to see my experience first?</p>
+        <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">View Resume <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="contact-page-footer">
+  <div class="container">
+    <div class="cpf-name">Seyi Ojo</div>
+    <div>Product Manager · AI &amp; Digital Products</div>
+    <div>Lagos, Nigeria</div>
+    <div class="cpf-links">
+      <a href="mailto:ojoseyi18@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+    </div>
+    <div>© 2026 Seyi Ojo</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

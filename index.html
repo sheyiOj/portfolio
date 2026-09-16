@@ -18,14 +18,14 @@
     <a href="index.html" class="logo">Seyi <span>Ojo</span></a>
     <nav class="nav" id="siteNav">
       <a href="#about">About</a>
-      <a href="#work">Case Studies</a>
+      <a href="#work">Work</a>
       <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
       <a class="btn btn-ghost header-cta" href="#work">View Projects</a>
-      <a class="btn btn-ghost header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
-      <a class="btn btn-primary" href="#contact">Contact</a>
+      <a class="btn btn-resume header-cta resume-btn" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume <span class="arrow">→</span></a>
+      <a class="btn btn-primary" href="contact.html">Contact</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
     </div>
   </div>
@@ -33,38 +33,67 @@
 
 <main>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container">
-      <p class="eyebrow">Product Manager · Lagos, Nigeria</p>
-      <h1>I turn ambiguous problems into shipped products people pay for.</h1>
-      <p class="lead">
-        I run the full product cycle — user research, PRDs, scope decisions, pricing, design direction —
-        and when there's no engineering team, I direct an AI coding agent against decisions I've made and
-        reviewed to build the product myself. Most recently: CareerLink-Up, a paid 1:1 mentorship marketplace
-        for Nigerian career switchers, taken from a fielded survey to a deployed, working product.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#work">View case studies</a>
-        <a class="btn btn-ghost" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Download resume</a>
+  <!-- Motion Hero — "Product Thinker" -->
+  <section class="motion-hero" id="topHero">
+    <div class="hero-bg"></div>
+    <div class="grid-lines"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Product Manager · Lagos, Nigeria</p>
+        <h1>I turn ambiguous problems into shipped products people pay for.</h1>
+        <p class="lead">
+          I run the full product cycle — user research, PRDs, scope decisions, pricing, design direction —
+          and when there's no engineering team, I direct an AI coding agent against decisions I've made and
+          reviewed to build the product myself. Most recently: CareerLink-Up, a paid 1:1 mentorship marketplace
+          for Nigerian career switchers, taken from a fielded survey to a deployed, working product.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View case studies</a>
+          <a class="btn btn-resume" href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Download resume <span class="arrow">→</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <div>
+            <div class="stat-num">0→1</div>
+            <div class="stat-label">Products taken from research to deployment</div>
+          </div>
+          <div>
+            <div class="stat-num">1</div>
+            <div class="stat-label">Person team on CareerLink-Up — research, PRD, pricing, design, build</div>
+          </div>
+          <div>
+            <div class="stat-num">24</div>
+            <div class="stat-label">Screens shipped, 18 DB migrations, 63 commits</div>
+          </div>
+          <div>
+            <div class="stat-num">FinTech</div>
+            <div class="stat-label">Also shipped: AI Copilot for Moniepoint</div>
+          </div>
+        </div>
       </div>
 
-      <div class="hero-meta">
-        <div>
-          <div class="stat-num">0→1</div>
-          <div class="stat-label">Products taken from research to deployment</div>
+      <div class="portrait-stage" id="portraitStage">
+        <div class="orbit-field">
+          <svg viewBox="0 0 480 560" aria-hidden="true">
+            <ellipse class="orbit-path" cx="240" cy="260" rx="210" ry="230" transform="rotate(-8 240 260)" />
+            <ellipse class="orbit-path" cx="240" cy="260" rx="150" ry="175" transform="rotate(12 240 260)" style="animation-delay:0.7s,2.2s" />
+            <circle class="node-dot" cx="60" cy="120" r="3" style="animation-delay:1.9s" />
+            <circle class="node-dot" cx="430" cy="90" r="2.5" style="animation-delay:2.1s" />
+            <circle class="node-dot" cx="420" cy="430" r="3" style="animation-delay:2.35s" />
+            <circle class="node-dot" cx="40" cy="410" r="2.5" style="animation-delay:2.5s" />
+            <circle class="node-dot" cx="240" cy="20" r="2" style="animation-delay:2.65s" />
+          </svg>
+          <span class="float-label l1">AI</span>
+          <span class="float-label l2">Product</span>
+          <span class="float-label l3">Research</span>
+          <span class="float-label l4">Strategy</span>
+          <span class="float-label l5">Build</span>
         </div>
-        <div>
-          <div class="stat-num">1</div>
-          <div class="stat-label">Person team on CareerLink-Up — research, PRD, pricing, design, build</div>
-        </div>
-        <div>
-          <div class="stat-num">24</div>
-          <div class="stat-label">Screens shipped, 18 DB migrations, 63 commits</div>
-        </div>
-        <div>
-          <div class="stat-num">FinTech</div>
-          <div class="stat-label">Also shipped: AI Copilot for Moniepoint</div>
+        <div class="portrait-frame" id="portraitFrame">
+          <div class="portrait-placeholder">
+            SO
+            <small>Portrait pending</small>
+          </div>
         </div>
       </div>
     </div>
@@ -181,19 +210,17 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact teaser -->
   <section id="contact" style="background:var(--bg-subtle);">
     <div class="container">
       <div class="contact-box">
         <div>
           <p class="eyebrow" style="margin-bottom:10px;">Get in touch</p>
-          <h2 style="margin-bottom:8px;">Let's talk product.</h2>
-          <p style="margin-bottom:0; max-width:420px;">Open to Product Manager roles and collaborations. Reach out on LinkedIn or by phone.</p>
-          <div class="contact-item">📞 09035064851</div>
+          <h2 style="margin-bottom:8px;">Have a product problem worth solving?</h2>
+          <p style="margin-bottom:0; max-width:420px;">Open to Product Manager roles and collaborations.</p>
         </div>
         <div class="contact-links">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          <a class="btn btn-ghost" href="tel:+2349035064851">Call me</a>
+          <a class="btn btn-primary" href="contact.html">Let's talk →</a>
         </div>
       </div>
     </div>
@@ -207,7 +234,7 @@
     <div class="footer-links">
       <a href="https://docs.google.com/document/d/1C36wCXFKUrN4nkNwWmkZrGubezMdMayL63N78PqXi1k/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
       <a href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
