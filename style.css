@@ -157,7 +157,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
     display: none;
   }
   .nav.open { display: flex; }
-  .header-actions .btn-ghost.resume-btn { display: none; }
+  .header-actions .btn-ghost.header-cta { display: none; }
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
 }
 
