@@ -437,6 +437,7 @@ p { margin: 0 0 16px; color: var(--text-muted); }
 .cs-toc a { display: block; padding: 7px 0; color: var(--text-muted); border-left: 2px solid transparent; padding-left: 12px; margin-left: -1px; }
 .cs-toc a:hover { color: var(--text); }
 .cs-toc a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 600; }
+@media (max-width: 900px) { .cs-toc { position: static; top: auto; margin-bottom: 32px; } }
 
 .cs-content { min-width: 0; padding-bottom: 100px; }
 .cs-section { margin-bottom: 64px; scroll-margin-top: 90px; }
