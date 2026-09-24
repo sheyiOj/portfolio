@@ -244,12 +244,12 @@
 <main class="wrap">
   <section class="hero">
     <div>
-      <div class="eyebrow">Eze &amp; Seyi · since 25 April 2026</div>
+      <div class="eyebrow">Eze &amp; Seyi · since 25 March 2026</div>
       <h1>Six months <em>of us.</em></h1>
       <p class="lede">Half a year of selfies, matching outfits, and one very friendly panda. Tonight we look back, check in, and talk honestly about where we're going.</p>
       <div class="count">
-        <div><b id="daysTogether">152</b><span>days together</span></div>
-        <div><b id="sixStat">31</b><span id="sixLabel">days to six months</span></div>
+        <div><b id="daysTogether">183</b><span>days together</span></div>
+        <div><b id="sixStat">1</b><span id="sixLabel">day to six months</span></div>
         <div><b>100</b><span>questions</span></div>
       </div>
       <a class="cta" href="#game">Roll the first die ↓</a>
@@ -338,7 +338,7 @@
     <div class="eyebrow">Here's to the next six</div>
     <h2>Still choosing <em>you.</em></h2>
     <p>Eze, thank you for six months of laughter, patience, and showing up. Whatever tonight's answers are, I'm glad we're asking them together.</p>
-    <p class="sign">With love, Seyi<br><span>25 April 2026 → 25 October 2026</span></p>
+    <p class="sign">With love, Seyi<br><span>25 March 2026 → 25 September 2026</span></p>
     <a class="cta" href="#game" id="again">Back to the dice ↑</a>
   </section>
 </main>
@@ -634,11 +634,11 @@
     renderAll();
   });
 
-  // Live counters: together since 25 April 2026, six months on 25 October 2026
+  // Live counters: together since 25 March 2026, six months on 25 October 2026
   const DAY = 86400000;
   const midnight = (d) => Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
   const today = midnight(new Date());
-  const start = Date.UTC(2026, 3, 25), six = Date.UTC(2026, 9, 25);
+  const start = Date.UTC(2026, 2, 25), six = Date.UTC(2026, 8, 25);
   $("daysTogether").textContent = Math.max(0, Math.round((today - start) / DAY));
   const toSix = Math.round((six - today) / DAY);
   if (toSix > 0) { $("sixStat").textContent = toSix; $("sixLabel").textContent = toSix === 1 ? "day to six months" : "days to six months"; }
