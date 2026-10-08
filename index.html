@@ -111,10 +111,9 @@
         <p>Four products, four different problems: a solo built marketplace, an AI copilot, a fintech PRD, and an AI ad generation tool.</p>
       </div>
 
-      <div class="card-grid">
-
-        <!-- CareerLink-Up -->
-        <article class="project-card">
+      <!-- CareerLink-Up: featured, full width -->
+      <article class="featured-project">
+        <div class="featured-main">
           <div class="tags">
             <span class="tag">Marketplace · Solo PM + Builder · Pre-launch</span>
           </div>
@@ -122,13 +121,23 @@
           <div class="card-status">Pre launch · deployed on test payment keys</div>
           <p class="desc">
             A paid 1:1 mentorship marketplace matching Nigerian career switchers to mentors who made the
-            same switch. Ran the survey, wrote the PRD, set pricing, and directed the build.
+            same switch, indexed by the transition itself rather than the job title. I ran the survey,
+            wrote the PRD, set pricing, and directed the build, and I'm the one person responsible for
+            every decision in it.
           </p>
           <div class="card-links">
             <a class="primary" href="careerlinkup.html">Read case study →</a>
             <a class="secondary" href="https://careerlinkup.vercel.app/" target="_blank" rel="noopener">Live product ↗</a>
           </div>
-        </article>
+        </div>
+        <div class="featured-facts">
+          <div class="featured-fact"><span class="signal-mark">✓</span><span>11-respondent survey set the 15% commission model and mentor pricing guide</span></div>
+          <div class="featured-fact"><span class="signal-mark">✓</span><span>Booking and payment rules enforced at the database level with Postgres RLS</span></div>
+          <div class="featured-fact"><span class="signal-mark">✓</span><span>24 screens, 18 DB migrations, 63 commits, research to deployed in 5 months</span></div>
+        </div>
+      </article>
+
+      <div class="card-grid">
 
         <!-- AI Copilot for Moniepoint -->
         <article class="project-card">

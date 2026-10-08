@@ -72,6 +72,15 @@
         <a class="btn btn-ghost" href="https://drive.google.com/drive/folders/1rsoXN08dZV2S61ZEtlMiGygHDxHKz-pT?usp=sharing" target="_blank" rel="noopener">View Doc ↗</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/oluwaseyifunmi-ojo/" target="_blank" rel="noopener">Ask me about it</a>
       </div>
+
+      <div class="tldr-box">
+        <div class="tldr-title">TL;DR</div>
+        <div class="tldr-row"><span class="tldr-label">Problem</span><span>Career switchers get advice built for people already in the field. The people who have the exact transition, often diaspora mentors, are reachable only through cold DMs they have every reason to ignore.</span></div>
+        <div class="tldr-row"><span class="tldr-label">Decision</span><span>Build a paid 1:1 marketplace indexed by the transition itself, not job title, with manual mentor verification standing in for the reviews a pre-launch product doesn't have.</span></div>
+        <div class="tldr-row"><span class="tldr-label">What I cut</span><span>Career communities (10/11 votes, the most requested feature) and anonymity (7/11 wanted it), both after evidence showed they'd undermine or fail to monetize the core product.</span></div>
+        <div class="tldr-row"><span class="tldr-label">Status</span><span>Deployed on Paystack test keys. Pre-launch: no real users, no mentors onboarded, no revenue yet.</span></div>
+        <div class="tldr-row"><span class="tldr-label">Key risk</span><span>Untested: will a price-sensitive switcher pay a stranger upfront with no prior contact and no reviews, on a verified profile alone?</span></div>
+      </div>
     </div>
   </section>
 
@@ -209,6 +218,17 @@
         <p><strong>Two architectural decisions worth stating.</strong></p>
         <p><em>Correctness lives in the database.</em> A booking can only move between states the database allows, availability is replaced in a single transaction rather than a delete followed by an insert, and double booking is blocked by a constraint rather than a check in application code. With one person building and no QA team, the app is the layer most likely to be wrong, so the guarantees were put underneath it.</p>
         <p><em>Money is a ledger, not a column.</em> Every paid call writes a ledger entry recording gross, the 15% fee and mentor net, with its own lifecycle: pending → cleared after 72h → batched → paid. Refunds void the entry if it hasn't been paid out, and record a platform absorbed loss if it has. Financial state is reconstructable.</p>
+
+        <div class="flow-stepper" style="margin-top:28px;">
+          <div class="flow-node"><div class="dot"></div><span class="flabel">Pending</span></div>
+          <div class="flow-line"></div>
+          <div class="flow-node"><div class="dot"></div><span class="flabel">Cleared (72h)</span></div>
+          <div class="flow-line"></div>
+          <div class="flow-node"><div class="dot"></div><span class="flabel">Batched</span></div>
+          <div class="flow-line"></div>
+          <div class="flow-node"><div class="dot"></div><span class="flabel">Paid</span></div>
+        </div>
+        <p style="font-size:13px; color:var(--text-faint); margin-top:12px;">A call completes and its ledger entry opens pending. 72 hours later, with no dispute raised, it clears. Vercel cron sweeps cleared entries into a payout batch. Paystack Transfers settles the batch and marks each entry paid. A refund at any stage before payout voids the entry; after payout, it's recorded as a platform absorbed loss instead.</p>
       </section>
 
       <!-- 3. EXECUTION AND ITERATION -->
